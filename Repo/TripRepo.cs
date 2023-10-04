@@ -9,23 +9,28 @@ public class TripRepo : ITripRepo
     {
         TouristPoint tp1 = new()
         {
-            Name = "Zamek"
+            Name = "Zamek",
+            Description = "Piękny zamek"
         };
         TouristPoint tp2 = new()
         {
-            Name = "Teatr"
+            Name = "Teatr",
+            Description = "Cudowny Teatr"
         };
         TouristPoint tp3 = new()
         {
-            Name = "Rynek"
+            Name = "Rynek",
+            Description = "Wspaniały rynek"
         };
         TouristPoint tp4 = new()
         {
-            Name = "Hotel"
+            Name = "Hotel",
+            Description = "Zabytkowy Hotel"
         };
         TouristPoint tp5 = new()
         {
-            Name = "Lotnisko"
+            Name = "Lotnisko",
+            Description = "Nowoczesne Lotnisko"
         };
         Trip trip1 = new()
         {
