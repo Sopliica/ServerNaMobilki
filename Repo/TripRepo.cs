@@ -53,14 +53,27 @@ public class TripRepo : ITripRepo
                 tp1
             }
         };
+        Trip trip3 = new()
+        {
+            Name = "Nudna wycieczka",
+            Itinerary = new()
+            {
+                tp5,
+                tp2,
+                tp3,
+                tp4,
+                tp1
+            }
+        };
         trips.Add(trip1);
         trips.Add(trip2);
+        trips.Add(trip3);
     }
-    public IEnumerable<Trip> GetAllTrips()
+    public  IEnumerable<Trip> GetAllTrips()
     {
         return trips;
     }
-    public Trip GetTripByName(string name)
+    public  Trip GetTripByName(string name)
     {
         return trips.FirstOrDefault(n => n.Name == name);
     }
